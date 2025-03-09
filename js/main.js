@@ -72,9 +72,9 @@ let input = document.querySelector('#inputToDo')
 let toDoList = document.querySelector('#toDoList')
 
 // Event Listeners
-document.querySelector('#add').addEventListener('click', addToList);
+document.querySelector('#add').addEventListener('click', addToList)
 // document.querySelector('#add').addEventListener('keydown', pressEnterToAdd)
-document.querySelector('#clearAll').addEventListener('click', clearAll);
+// document.querySelector('#clearAll').addEventListener('click', clearAll)
 
 
 function addToList(){
@@ -99,9 +99,10 @@ function addToList(){
 //     }
 // }
 
-function clearAll(){
-
-}
+// function clearAll(){
+//     document.querySelector('li').value = " "
+//     console.log('hello world')
+// }
 
 
 // toggle the checkbox

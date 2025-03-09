@@ -64,10 +64,12 @@ ul{
 
 ul li{
     list-style: none; 
+    height: 40px;
     font-size: 0.8rem;
-    padding: 1.3rem;
+    padding: 12px 8px 12px 50px;
     cursor: pointer;
     position: relative;
+    color: rgb(175, 54, 54);
 }
 
 ul li::before{
@@ -79,23 +81,26 @@ ul li::before{
     background-image: url(../circle.png);
     background-size: cover;
     background-position: center;
-    top: 12px;
+    top: 5px;
     left: 8px;
 }
 
 ul li.checked{
-    color: pink;
+    color: rgb(175, 54, 54);
     text-decoration: line-through;
 }
 
 ul li.checked::before{
     background-image: url(../checked.png);
+
+    height: 28px; 
+    width: 28px;
 }
 
 ul li span{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 0px;
     width: 40px; 
     height: 40PX;
     font-size: 0.8rem;
@@ -111,6 +116,7 @@ ul li span:hover{
 
 footer{
     display: flex; 
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: rgb(175, 54, 54);
 }
