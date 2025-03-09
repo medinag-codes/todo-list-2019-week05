@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, pink, rgb(175, 54, 54));
+    padding: 10px;
+}
+
+.toDoList{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.toDoList h1{
+    color:rgb(175, 54, 54);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.inputBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(244, 223, 223); 
+    border-radius: 25px;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+input{
+    flex:1; 
+    border: none;
+    outline: none;
+    background: transparent; 
+    padding: 5px;
+    font-weight: 300;
+}
+button{
+    border: none;
+    outline: none;
+    padding: 16px 50px;
+    background: rgb(175, 54, 54);
+    font-size: 0.8rem;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+ul{
+    overflow-y: scroll;
+}
+
+ul li{
+    list-style: none; 
+    font-size: 0.8rem;
+    padding: 1.3rem;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50px;
+    background-image: url(../circle.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: pink;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(../checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px; 
+    height: 40PX;
+    font-size: 0.8rem;
+    color: rgb(175, 54, 54);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: pink;
+}
+
+footer{
+    display: flex; 
+    justify-content: center;
+    color: rgb(175, 54, 54);
+}
